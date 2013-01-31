@@ -8,23 +8,18 @@ package lab1;
  */
 public class IntroJavaCourse extends ProgrammingCourse{
     
-    private String prerequisites;
-
-    public IntroJavaCourse(String courseName, String courseNumber) {
+       public IntroJavaCourse(String courseName, String courseNumber) {
         super(courseName, courseNumber);
+	
+	super.setPrerequisites("Prerequisite for this class is Intro To Programming.");
     }
     
     public IntroJavaCourse(String courseName, String courseNumber, double credits) {
         super(courseName, courseNumber);
-    }
-    
-    public String getPrerequisites() {
-        return prerequisites;
+	
+	super.setPrerequisites("Prerequisite for this class is: Intro To Programming.");
     }
 
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
-    }
 
         public void setCredits(double credits) {
         if(credits < 0 || credits > 5.0) {

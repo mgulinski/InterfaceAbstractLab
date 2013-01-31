@@ -14,10 +14,15 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
 // constructors
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
        super(courseName, courseNumber);
+       
+       // no prereqs for this class
+       super.setPrerequisites("This class doesn't have prerequisites");
     }
     
     public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
        super(courseName, courseNumber, credits);
+       
+        super.setPrerequisites("This class doesn't have prerequisites");
     }
 
  // overriding setter method

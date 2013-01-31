@@ -11,6 +11,8 @@ public abstract class ProgrammingCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
+    //decided to add prerequisit
+    private String prerequisites;
     
     public ProgrammingCourse(String courseName, String courseNumber) {
 	this.courseName = courseName;
@@ -46,6 +48,8 @@ public abstract class ProgrammingCourse {
 // in particular 
     
     public abstract void setCredits(double credits); 
+    
+//   will comment out for now - doesn't seem like I will need that
 //    {
 //        if(credits < 0.5 || credits > 4.0) {
 //            JOptionPane.showMessageDialog(null,
@@ -66,6 +70,19 @@ public abstract class ProgrammingCourse {
             System.exit(0);
         }
         this.courseName = courseName;
+    }
+
+    public String getPrerequisites() {
+	return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
+        this.prerequisites = prerequisites;
     }
 
     
