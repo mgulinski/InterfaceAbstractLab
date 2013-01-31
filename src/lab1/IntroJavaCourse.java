@@ -3,33 +3,21 @@ package lab1;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Maciej
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
-    private String courseNumber;
-    private double credits;
+public class IntroJavaCourse extends ProgrammingCourse{
+    
     private String prerequisites;
 
     public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+        super(courseName, courseNumber);
     }
-
-    public String getCourseNumber() {
-        return courseNumber;
+    
+    public IntroJavaCourse(String courseName, String courseNumber, double credits) {
+        super(courseName, courseNumber);
     }
-
-    public void setCourseNumber(String courseNumber) {
-        this.courseNumber = courseNumber;
-    }
-
-    public double getCredits() {
-        return credits;
-    }
-
-
+    
     public String getPrerequisites() {
         return prerequisites;
     }
