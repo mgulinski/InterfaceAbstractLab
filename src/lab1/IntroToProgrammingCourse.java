@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 public class IntroToProgrammingCourse extends ProgrammingCourse {
 
     private double credits;
-
+    
     public IntroToProgrammingCourse() {
 	
 	setCourseName("Introduction To Programming");
@@ -21,10 +21,10 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
 	setPrerequisites("This class doesn't have any prerequisites");
     }
 
-    public double getCredits() {
+   public double getCredits() {
 	return credits;
     }
-
+    
     public final void setCredits(double credits) {
 
 	if (credits < 0.5 || credits > 4.0) {
@@ -34,13 +34,6 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
 	}
 	
 	this.credits = credits;
-    }
-    
-    @Override
-    public String toString() {
 	
-	String str = super.toString() + "\nCredits:\t" + credits;
-	
-	return str;
     }
 }

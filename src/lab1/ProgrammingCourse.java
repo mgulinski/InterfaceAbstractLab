@@ -10,10 +10,16 @@ public abstract class ProgrammingCourse {
 
     private String courseName;
     private String courseNumber;
-    //decided to add prerequisites to super
+     //decided to add prerequisites to super
     private String prerequisites;
-    
+        
     // getters and setters
+    
+    public abstract double getCredits(); 
+    
+    public abstract void setCredits(double credits);
+    
+    
     public String getCourseNumber() {
 	return courseNumber;
     }
@@ -60,6 +66,7 @@ public abstract class ProgrammingCourse {
 	String str = "\nCourse Info:\n--------------"
 		+ "\nCourse Name:\t" + courseName
 		+ "\nCourse Number:\t" + courseNumber
+		+ "\nCredits:\t" + getCredits()
 		+ "\nPrerequisites:\t" + prerequisites;
 
 	return str;

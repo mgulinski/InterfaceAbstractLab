@@ -13,6 +13,10 @@ public class DriverForLab1 {
 
 	System.out.println(myintro.toString());
 	
+	myintro.setCredits(1.0);
+	
+	System.out.println(myintro.toString());
+	
 	System.out.println();
 	
 	// intro to java
