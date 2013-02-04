@@ -8,17 +8,23 @@ public class DriverForLab1 {
 
     public static void main(String[] args) {
 
-	ProgrammingCourse mycourse = new IntroJavaCourse();
+	//intro to programming
+	ProgrammingCourse myintro = new IntroToProgrammingCourse();
 
-	System.out.println(mycourse.toString());
-
-//	mycourse.setCredits(4);
-
-	System.out.println(mycourse.toString());
+	System.out.println(myintro.toString());
 	
+	System.out.println();
 	
-	ProgrammingCourse newcourse = new AdvancedJavaCourse();
+	// intro to java
+	ProgrammingCourse myjava = new IntroJavaCourse();
 	
-	System.out.println(newcourse.toString());
+	System.out.println(myjava.toString());
+	
+	System.out.println();
+	
+	//advanced java
+	ProgrammingCourse myadvjava = new AdvancedJavaCourse();
+	
+	System.out.println(myadvjava.toString());
     }
 }

@@ -10,10 +10,13 @@ import javax.swing.JOptionPane;
  */
 public class AdvancedJavaCourse extends ProgrammingCourse {
 
+    private double credits;
+
     public AdvancedJavaCourse() {
 
 	setCourseName("Advanced Java Programming");
 	setCourseNumber("152-102");
+	setCredits(4.0);
 	setPrerequisites("Intro To Java Programming.");
     }
 
@@ -21,12 +24,25 @@ public class AdvancedJavaCourse extends ProgrammingCourse {
 	return this.getCourseName().toUpperCase();
     }
 
-    public void setCredits(double credits) {
+    public double getCredits() {
+	return credits;
+    }
+    
+    public final void setCredits(double credits) {
+
 	if (credits < 0.5 || credits > 4.0) {
 	    JOptionPane.showMessageDialog(null,
 		    "Error: credits must be in the range 0.5 to 4.0");
 	    System.exit(0);
 	}
-	this.setCredits(credits);
+	this.credits = credits;
+    }
+    
+    @Override
+    public String toString() {
+	
+	String str = super.toString() + "\nCredits:\t" + credits;
+	
+	return str;
     }
 }
