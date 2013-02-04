@@ -10,18 +10,13 @@ import javax.swing.JOptionPane;
  */
 public class AdvancedJavaCourse extends ProgrammingCourse {
 
-    public AdvancedJavaCourse(String courseName, String courseNumber) {
-	super(courseName, courseNumber);
+    public AdvancedJavaCourse() {
 
-	super.setPrerequisites("Prerequisite for this class is: Intro To Java.");
+	setCourseName("Advanced Java Programming");
+	setCourseNumber("152-102");
+	setPrerequisites("Intro To Java Programming.");
     }
 
-    
-   public AdvancedJavaCourse(String courseName, String courseNumber, double credits) {
-	super(courseName, courseNumber, credits);
-
-	super.setPrerequisites("Prerequisite for this class is: Intro To Java.");
-    } 
     public String getCapitalizedCourseName() {
 	return this.getCourseName().toUpperCase();
     }
