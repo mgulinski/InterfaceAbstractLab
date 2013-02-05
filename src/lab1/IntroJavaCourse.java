@@ -12,10 +12,10 @@ public class IntroJavaCourse extends ProgrammingCourse {
     
     public IntroJavaCourse() {
 
-	setCourseName("Intro To Java Programming");
-	setCourseNumber("151-101");
-	setCredits(3.0);
-	setPrerequisites("Intro To Programming");
+	this.setCourseName("Intro To Java Programming");
+	this.setCourseNumber("151-101");
+	this.setCredits(3.0);
+	this.setPrerequisites("Intro To Programming");
     }
 
     public double getCredits() {

@@ -8,11 +8,22 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class AdvancedJavaCourse {
+public class AdvancedJavaCourse implements ICourse{
+    
     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
+
+    public AdvancedJavaCourse() {
+	
+	this.setCourseName("Advanced Java Programming");
+	this.setCourseNumber("102");
+	this.setCredits(4.0);
+	this.setPrerequisites("Introduction To Java Programming");
+    }
+    
+    
 
     public AdvancedJavaCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
@@ -36,7 +47,7 @@ public class AdvancedJavaCourse {
         return credits;
     }
 
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
@@ -49,7 +60,7 @@ public class AdvancedJavaCourse {
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");
@@ -71,5 +82,17 @@ public class AdvancedJavaCourse {
         this.courseName = courseName;
     }
 
+    @Override
+    public String toString() {
+
+	String str = "\nCourse Info:\n--------------"
+		+ "\nCourse Name:\t" + courseName
+		+ "\nCourse Number:\t" + courseNumber
+		+ "\nCredits:\t" + credits
+		+ "\nPrerequisites:\t" + prerequisites;
+
+	return str;
+   
+    }
     
 }

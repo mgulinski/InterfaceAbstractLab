@@ -15,10 +15,10 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
     
     public IntroToProgrammingCourse() {
 	
-	setCourseName("Introduction To Programming");
-	setCourseNumber("150-100");
-	setCredits(2.0);
-	setPrerequisites("This class doesn't have any prerequisites");
+	this.setCourseName("Introduction To Programming");
+	this.setCourseNumber("150-100");
+	this.setCredits(2.0);
+	this.setPrerequisites("This class doesn't have any prerequisites");
     }
 
    public double getCredits() {

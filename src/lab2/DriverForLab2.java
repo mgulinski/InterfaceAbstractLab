@@ -1,15 +1,17 @@
-package lab1;
+package lab2;
+
+import lab1.*;
 
 /**
  *
  * @author Machi
  */
-public class DriverForLab1 {
+public class DriverForLab2 {
 
     public static void main(String[] args) {
 
 	//intro to programming
-	ProgrammingCourse myintro = new IntroToProgrammingCourse();
+	ICourse myintro = new IntroToProgrammingCourse();
 
 	System.out.println(myintro.toString());
 	
@@ -20,16 +22,18 @@ public class DriverForLab1 {
 	System.out.println();
 	
 	// intro to java
-	ProgrammingCourse myjava = new IntroJavaCourse();
+	ICourse myjava = new IntroJavaCourse();
 	
 	System.out.println(myjava.toString());
 	
 	System.out.println();
 	
 	//advanced java
-	ProgrammingCourse myadvjava = new AdvancedJavaCourse();
+	ICourse myadvjava = new AdvancedJavaCourse();
 	
 	System.out.println(myadvjava.toString());
+	
+	System.out.println();
 	
 	System.out.println(myadvjava.getPrerequisites());
     }

@@ -14,10 +14,10 @@ public class AdvancedJavaCourse extends ProgrammingCourse {
    
     public AdvancedJavaCourse() {
 	
-	setCourseName("Advanced Java Programming");
-	setCourseNumber("152-102");
-	setCredits(4.0);
-	setPrerequisites("Intro To Java Programming");
+	this.setCourseName("Advanced Java Programming");
+	this.setCourseNumber("152-102");
+	this.setCredits(4.0);
+	this.setPrerequisites("Intro To Java Programming");
     }
 
     public String getCapitalizedCourseName() {
