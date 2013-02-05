@@ -4,31 +4,24 @@ package lab3;
  *
  * @author Machi
  */
-public class MartialArtist extends MartialArtsPractitioner
+public class MartialArtist extends MartialArtsPractitioner 
 
 {
     public void canRun() {
-	System.out.println("I'm running");
+	System.out.println("I'm running like a martial artist!");
     }
     
     
     public void canJump() {
-	System.out.println("I'm jumping!");
+	System.out.println("I'm jumping like a martial artist!");
     
     }
     public void canTrain() {
 	
-	System.out.println("I'm training!");
+	System.out.println("I'm training like a martial artist!");
     
     
     }
-
-    public FightingStyle getFightingStyle() {
-	return this.fightStyle;
-    }
-
-    public void setFightingStyle(FightingStyle fightStyle) {
-	throw new UnsupportedOperationException("Not supported yet.");
-    }
+    
 }
 

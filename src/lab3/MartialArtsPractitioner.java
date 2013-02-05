@@ -4,12 +4,11 @@ package lab3;
  *
  * @author Machi
  */
-public abstract class MartialArtsPractitioner implements IAthlete, IFighting {
+public abstract class MartialArtsPractitioner implements IAthlete{
     
     private String name;
     private int age;
-    private FightingStyle fightStyle;
-    
+       
     private int speedLevel;
     private int strengthLevel;
     private int boxingLevel;
@@ -34,15 +33,7 @@ public abstract class MartialArtsPractitioner implements IAthlete, IFighting {
 	this.age = age;
     }
 
-    public FightingStyle getFightStyle() {
-	return fightStyle;
-    }
-
-    public void setFightStyle(FightingStyle fightStyle) {
-	this.fightStyle = fightStyle;
-    }
-
-    public int getSpeedLevel() {
+        public int getSpeedLevel() {
 	return speedLevel;
     }
 
